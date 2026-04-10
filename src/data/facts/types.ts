@@ -26,6 +26,7 @@ export interface Fact {
     category: FactCategory;
     sources: FactSource[];
     quizPotential: boolean;
+    depth: number;
     tags?: string[];
 }
 
@@ -39,6 +40,11 @@ export const CATEGORY_LABELS: Record<FactCategory, string> = {
     "adaptation-differences": "Book vs Film",
     geography: "Geography",
     culture: "Culture & Customs",
+};
+
+export const DEPTH_LABELS: Record<number, string> = {
+    1: "Essential",
+    2: "Extended",
 };
 
 export const SOURCE_LABELS: Record<FactSource, string> = {

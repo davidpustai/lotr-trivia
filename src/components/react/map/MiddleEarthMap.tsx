@@ -15,7 +15,11 @@ import type {
     MapLayer,
     MapLocation,
 } from "../../../data/map/types";
-import { CATEGORY_LABELS, ERA_LABELS } from "../../../data/map/types";
+import {
+    CATEGORY_LABELS,
+    DEPTH_LABELS,
+    ERA_LABELS,
+} from "../../../data/map/types";
 import { LocationPopup } from "./LocationPopup";
 
 // Category-based marker colors
@@ -61,6 +65,9 @@ export function MiddleEarthMap({ layers, locations }: Props) {
     const [activeCategories, setActiveCategories] = useState<
         Set<LocationCategory>
     >(new Set());
+    const [activeDepths, setActiveDepths] = useState<Set<number>>(
+        new Set([1, 2]),
+    );
 
     const activeLayer = layers.find((l) => l.id === activeEra);
     const eraLocations = useMemo(
@@ -70,11 +77,12 @@ export function MiddleEarthMap({ layers, locations }: Props) {
 
     const filteredLocations = useMemo(() => {
         let result = eraLocations;
+        result = result.filter((loc) => activeDepths.has(loc.depth));
         if (activeCategories.size > 0) {
             result = result.filter((loc) => activeCategories.has(loc.category));
         }
         return result;
-    }, [eraLocations, activeCategories]);
+    }, [eraLocations, activeDepths, activeCategories]);
 
     const searchResults = useMemo(() => {
         if (!searchQuery.trim()) return [];
@@ -87,6 +95,18 @@ export function MiddleEarthMap({ layers, locations }: Props) {
             const next = new Set(prev);
             if (next.has(cat)) next.delete(cat);
             else next.add(cat);
+            return next;
+        });
+    }, []);
+
+    const toggleDepth = useCallback((d: number) => {
+        setActiveDepths((prev) => {
+            const next = new Set(prev);
+            if (next.has(d)) {
+                if (next.size > 1) next.delete(d);
+            } else {
+                next.add(d);
+            }
             return next;
         });
     }, []);
@@ -148,7 +168,29 @@ export function MiddleEarthMap({ layers, locations }: Props) {
                 </div>
             </div>
 
-            {/* Category filters */}
+            {/* Detail Level + Category filters */}
+            <div className="flex flex-wrap items-center gap-2">
+                <span className="text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                    Detail:
+                </span>
+                {Object.entries(DEPTH_LABELS).map(([d, label]) => {
+                    const depth = Number(d);
+                    return (
+                        <button
+                            key={depth}
+                            onClick={() => toggleDepth(depth)}
+                            className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
+                                activeDepths.has(depth)
+                                    ? "bg-[var(--color-mithril)] text-[var(--color-bg-primary)]"
+                                    : "bg-[var(--color-bg-card)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)]"
+                            }`}
+                        >
+                            {label}
+                        </button>
+                    );
+                })}
+                <span className="mx-1 text-[var(--color-border)]">|</span>
+            </div>
             <div className="flex flex-wrap gap-2">
                 {(Object.keys(CATEGORY_LABELS) as LocationCategory[]).map(
                     (cat) => (

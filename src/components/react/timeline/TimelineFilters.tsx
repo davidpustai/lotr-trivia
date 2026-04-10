@@ -3,6 +3,7 @@ import type { Age, EventTag, Significance } from "../../../data/timeline/types";
 import {
     AGE_LABELS,
     AGE_ORDER,
+    DEPTH_LABELS,
     TAG_LABELS,
 } from "../../../data/timeline/types";
 
@@ -15,6 +16,8 @@ interface Props {
     onToggleTag: (tag: EventTag) => void;
     minSignificance: Significance;
     onSignificanceChange: (s: Significance) => void;
+    activeDepths: Set<number>;
+    onToggleDepth: (d: number) => void;
     onClearAll: () => void;
 }
 
@@ -27,12 +30,15 @@ export function TimelineFilters({
     onToggleTag,
     minSignificance,
     onSignificanceChange,
+    activeDepths,
+    onToggleDepth,
     onClearAll,
 }: Props) {
     const hasFilters =
         activeAges.size > 0 ||
         activeTags.size > 0 ||
         minSignificance > 1 ||
+        activeDepths.size < 2 ||
         searchQuery;
 
     return (
@@ -90,6 +96,31 @@ export function TimelineFilters({
                             {TAG_LABELS[tag]}
                         </button>
                     ))}
+                </div>
+            </div>
+
+            {/* Detail Level */}
+            <div>
+                <span className="mb-2 block text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                    Detail Level
+                </span>
+                <div className="flex flex-wrap gap-2">
+                    {Object.entries(DEPTH_LABELS).map(([d, label]) => {
+                        const depth = Number(d);
+                        return (
+                            <button
+                                key={depth}
+                                onClick={() => onToggleDepth(depth)}
+                                className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
+                                    activeDepths.has(depth)
+                                        ? "bg-[var(--color-gold)] text-[var(--color-bg-primary)]"
+                                        : "bg-[var(--color-bg-card)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)]"
+                                }`}
+                            >
+                                {label}
+                            </button>
+                        );
+                    })}
                 </div>
             </div>
 

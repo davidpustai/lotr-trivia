@@ -30,6 +30,7 @@ export interface TimelineEvent {
     details?: string;
     tags: EventTag[];
     significance: Significance;
+    depth: number;
     relatedCharacters?: string[];
     relatedLocations?: string[];
 }
@@ -53,6 +54,11 @@ export const AGE_ORDER: Age[] = [
     "third-age",
     "fourth-age",
 ];
+
+export const DEPTH_LABELS: Record<number, string> = {
+    1: "Essential",
+    2: "Extended",
+};
 
 export const TAG_LABELS: Record<EventTag, string> = {
     creation: "Creation",

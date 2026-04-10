@@ -4,7 +4,7 @@ export const mapLayers: MapLayer[] = [
     {
         id: "first-age",
         name: "First Age (Beleriand)",
-        imagePath: "/maps/first-age-beleriand.jpg",
+        imagePath: "/maps/first-age-beleriand.svg",
         bounds: [
             [0, 0],
             [1000, 1500],
@@ -13,7 +13,7 @@ export const mapLayers: MapLayer[] = [
     {
         id: "third-age",
         name: "Third Age (Middle-earth)",
-        imagePath: "/maps/second-third-age.jpg",
+        imagePath: "/maps/second-third-age.svg",
         bounds: [
             [0, 0],
             [1000, 1500],

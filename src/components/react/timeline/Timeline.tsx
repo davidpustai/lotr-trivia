@@ -20,6 +20,9 @@ export function Timeline({ events }: Props) {
     const [activeAges, setActiveAges] = useState<Set<Age>>(new Set());
     const [activeTags, setActiveTags] = useState<Set<EventTag>>(new Set());
     const [minSignificance, setMinSignificance] = useState<Significance>(1);
+    const [activeDepths, setActiveDepths] = useState<Set<number>>(
+        new Set([1, 2]),
+    );
     const [currentAge, setCurrentAge] = useState<Age | null>(null);
     const ageRefs = useRef<Map<Age, HTMLDivElement>>(new Map());
 
@@ -41,15 +44,29 @@ export function Timeline({ events }: Props) {
         });
     }, []);
 
+    const toggleDepth = useCallback((d: number) => {
+        setActiveDepths((prev) => {
+            const next = new Set(prev);
+            if (next.has(d)) {
+                if (next.size > 1) next.delete(d);
+            } else {
+                next.add(d);
+            }
+            return next;
+        });
+    }, []);
+
     const clearAll = useCallback(() => {
         setActiveAges(new Set());
         setActiveTags(new Set());
         setMinSignificance(1);
+        setActiveDepths(new Set([1, 2]));
         setSearchQuery("");
     }, []);
 
     const filtered = useMemo(() => {
         let result = events;
+        result = result.filter((e) => activeDepths.has(e.depth));
         if (activeAges.size > 0) {
             result = result.filter((e) => activeAges.has(e.age));
         }
@@ -69,7 +86,7 @@ export function Timeline({ events }: Props) {
             );
         }
         return result;
-    }, [events, activeAges, activeTags, minSignificance, searchQuery]);
+    }, [events, activeDepths, activeAges, activeTags, minSignificance, searchQuery]);
 
     // Group by age
     const grouped = useMemo(() => {
@@ -110,6 +127,8 @@ export function Timeline({ events }: Props) {
                 onToggleTag={toggleTag}
                 minSignificance={minSignificance}
                 onSignificanceChange={setMinSignificance}
+                activeDepths={activeDepths}
+                onToggleDepth={toggleDepth}
                 onClearAll={clearAll}
             />
 

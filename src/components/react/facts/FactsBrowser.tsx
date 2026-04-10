@@ -1,7 +1,11 @@
 import { Search, Star, X } from "lucide-react";
 import { useCallback, useMemo, useState } from "react";
 import type { Fact, FactCategory, FactSource } from "../../../data/facts/types";
-import { CATEGORY_LABELS, SOURCE_LABELS } from "../../../data/facts/types";
+import {
+    CATEGORY_LABELS,
+    DEPTH_LABELS,
+    SOURCE_LABELS,
+} from "../../../data/facts/types";
 import { textSearch } from "../../../utils/search";
 import { FactCard } from "./FactCard";
 
@@ -18,6 +22,9 @@ export function FactsBrowser({ facts }: Props) {
         new Set(),
     );
     const [quizOnly, setQuizOnly] = useState(false);
+    const [activeDepths, setActiveDepths] = useState<Set<number>>(
+        new Set([1, 2]),
+    );
 
     const toggleCategory = useCallback((cat: FactCategory) => {
         setActiveCategories((prev) => {
@@ -37,15 +44,29 @@ export function FactsBrowser({ facts }: Props) {
         });
     }, []);
 
+    const toggleDepth = useCallback((d: number) => {
+        setActiveDepths((prev) => {
+            const next = new Set(prev);
+            if (next.has(d)) {
+                if (next.size > 1) next.delete(d);
+            } else {
+                next.add(d);
+            }
+            return next;
+        });
+    }, []);
+
     const clearAll = useCallback(() => {
         setActiveCategories(new Set());
         setActiveSources(new Set());
         setQuizOnly(false);
+        setActiveDepths(new Set([1, 2]));
         setSearchQuery("");
     }, []);
 
     const filtered = useMemo(() => {
         let result = facts;
+        result = result.filter((f) => activeDepths.has(f.depth));
         if (activeCategories.size > 0) {
             result = result.filter((f) => activeCategories.has(f.category));
         }
@@ -65,12 +86,13 @@ export function FactsBrowser({ facts }: Props) {
             );
         }
         return result;
-    }, [facts, activeCategories, activeSources, quizOnly, searchQuery]);
+    }, [facts, activeDepths, activeCategories, activeSources, quizOnly, searchQuery]);
 
     const hasFilters =
         activeCategories.size > 0 ||
         activeSources.size > 0 ||
         quizOnly ||
+        activeDepths.size < 2 ||
         searchQuery;
 
     return (
@@ -133,6 +155,30 @@ export function FactsBrowser({ facts }: Props) {
                                 </button>
                             ),
                         )}
+                    </div>
+                </div>
+
+                <div>
+                    <span className="mb-2 block text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                        Detail Level
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                        {Object.entries(DEPTH_LABELS).map(([d, label]) => {
+                            const depth = Number(d);
+                            return (
+                                <button
+                                    key={depth}
+                                    onClick={() => toggleDepth(depth)}
+                                    className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
+                                        activeDepths.has(depth)
+                                            ? "bg-[var(--color-shire-green)]/30 text-[var(--color-shire-green-light)]"
+                                            : "bg-[var(--color-bg-card)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)]"
+                                    }`}
+                                >
+                                    {label}
+                                </button>
+                            );
+                        })}
                     </div>
                 </div>
 

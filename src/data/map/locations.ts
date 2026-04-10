@@ -9,6 +9,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [850, 500],
         description:
             "The great fortress of Morgoth in the Iron Mountains, north of Beleriand. Beneath it lay vast underground halls where Morgoth bred his armies of orcs, trolls, dragons, and Balrogs. The Silmarils were kept in his iron crown here.",
+        depth: 1,
         relatedCharacters: ["Morgoth", "Sauron", "Gothmog"],
         relatedEvents: ["Siege of Angband", "Nirnaeth Arnoediad"],
     },
@@ -20,6 +21,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [650, 550],
         description:
             "The Hidden City of King Turgon, built in a secret valley encircled by the Echoriath mountains. It was the last great Elven stronghold to fall, betrayed by Maeglin. Glorfindel fell here fighting a Balrog to protect fleeing refugees.",
+        depth: 1,
         relatedCharacters: ["Turgon", "Idril", "Tuor", "Maeglin", "Glorfindel"],
         relatedEvents: ["Fall of Gondolin"],
     },
@@ -31,6 +33,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [450, 400],
         description:
             "Underground fortress-city built by Finrod Felagund along the River Narog, inspired by Menegroth. Finrod left his throne to aid Beren, and was killed by Sauron's werewolf. Later ruled by Orodreth, it was destroyed by Glaurung the dragon.",
+        depth: 1,
         relatedCharacters: ["Finrod Felagund", "Turin Turambar", "Glaurung"],
     },
     {
@@ -41,6 +44,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [500, 600],
         description:
             "The halls of King Thingol and Melian in Doriath, carved by Dwarves of Belegost. Protected by the Girdle of Melian. It was sacked twice: first by Dwarves who coveted the Nauglamir with the Silmaril, then by the sons of Feanor.",
+        depth: 1,
         relatedCharacters: ["Thingol", "Melian", "Luthien", "Beren"],
     },
     {
@@ -51,6 +55,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [880, 500],
         description:
             "Three volcanic peaks raised by Morgoth above the gates of Angband. Made from the slag and refuse of his underground delving. Fingolfin rode alone to their gates to challenge Morgoth to single combat. Destroyed in the War of Wrath.",
+        depth: 1,
         relatedCharacters: ["Morgoth", "Fingolfin", "Maedhros"],
     },
     {
@@ -61,6 +66,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [700, 350],
         description:
             "The realm of Fingolfin and later Fingon in northwest Beleriand, bordered by the Ered Wethrin. 'Land of Mist' in Sindarin. After the Nirnaeth Arnoediad, it was given to Easterlings loyal to Morgoth.",
+        depth: 1,
         relatedCharacters: ["Fingolfin", "Fingon", "Hurin", "Turin"],
     },
     {
@@ -71,6 +77,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [250, 500],
         description:
             "Refugee settlement at the mouths of the River Sirion where survivors of Gondolin, Doriath, and other fallen realms gathered. Earendil and Elwing lived here. It was attacked by the remaining sons of Feanor seeking the Silmaril.",
+        depth: 1,
         relatedCharacters: ["Earendil", "Elwing", "Maedhros", "Maglor"],
     },
     {
@@ -81,6 +88,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [500, 580],
         description:
             "The forested realm of King Thingol and Melian the Maia in central Beleriand. Protected by the Girdle of Melian, an enchantment that prevented any from entering without permission. Home of Luthien Tinuviel, the most beautiful of all the Children of Iluvatar.",
+        depth: 1,
         relatedCharacters: ["Thingol", "Melian", "Luthien"],
     },
     {
@@ -91,6 +99,7 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [600, 450],
         description:
             "Island fortress on the River Sirion, originally held by Finrod Felagund. Captured by Sauron who renamed it Tol-in-Gaurhoth (Isle of Werewolves). Luthien and Huan defeated Sauron here to rescue Beren. Sauron fled in the form of a vampire.",
+        depth: 1,
         relatedCharacters: [
             "Finrod Felagund",
             "Sauron",
@@ -107,7 +116,95 @@ export const firstAgeLocations: MapLocation[] = [
         coords: [750, 500],
         description:
             "The desert plain north of Beleriand where the Battle of Unnumbered Tears was fought — the fifth and most devastating battle of the Wars of Beleriand. The Elven-Human alliance was destroyed through treachery. Hurin was captured here after his legendary last stand.",
+        depth: 1,
         relatedCharacters: ["Fingon", "Maedhros", "Hurin", "Turgon"],
+    },
+    {
+        id: "ossiriand",
+        name: "Ossiriand",
+        era: "first-age",
+        category: "realm",
+        coords: [350, 900],
+        description:
+            "The Land of Seven Rivers in eastern Beleriand, between the River Gelion and the Blue Mountains. Home to the Laiquendi (Green-elves). After the First Age, its remnant became Lindon.",
+        depth: 2,
+    },
+    {
+        id: "thargelion",
+        name: "Thargelion",
+        era: "first-age",
+        category: "realm",
+        coords: [550, 850],
+        description:
+            "The land east of the River Gelion and west of the Blue Mountains, ruled by Caranthir, fourth son of Feanor. Known also as Talath Rhúnen, it was a frontier between Elven and Dwarvish territories.",
+        depth: 2,
+        relatedCharacters: ["Caranthir"],
+    },
+    {
+        id: "nevrast",
+        name: "Nevrast",
+        era: "first-age",
+        category: "realm",
+        coords: [700, 250],
+        description:
+            "A coastal region west of Dor-lómin, once ruled by Turgon before he departed in secret to build Gondolin. The city of Vinyamar on its coast was left empty, where Ulmo later guided Tuor.",
+        depth: 2,
+        relatedCharacters: ["Turgon", "Tuor"],
+    },
+    {
+        id: "belegost",
+        name: "Belegost",
+        era: "first-age",
+        category: "city",
+        coords: [500, 1050],
+        description:
+            "One of the two great Dwarf-cities in the Blue Mountains, also called Gabilgathol. Its warriors fought valiantly in the Nirnaeth Arnoediad, and their lord Azaghâl wounded Glaurung the dragon before falling.",
+        depth: 2,
+        relatedCharacters: ["Azaghâl"],
+        relatedEvents: ["Nirnaeth Arnoediad"],
+    },
+    {
+        id: "nogrod",
+        name: "Nogrod",
+        era: "first-age",
+        category: "city",
+        coords: [400, 1050],
+        description:
+            "The second great Dwarf-city in the Ered Luin, called Tumunzahar in Khuzdul. Its smiths crafted the Nauglamír and the legendary Dragon-helm of Dor-lómin. Dwarves of Nogrod sacked Menegroth for the Silmaril.",
+        depth: 2,
+        relatedEvents: ["Sack of Menegroth"],
+    },
+    {
+        id: "nan-dungortheb",
+        name: "Nan Dungortheb",
+        era: "first-age",
+        category: "forest",
+        coords: [600, 600],
+        description:
+            "The Valley of Dreadful Death, a haunted region between the precipices of Ered Gorgoroth and the northern fence of Doriath. Filled with the spawn of Ungoliant, few dared to cross it.",
+        depth: 2,
+    },
+    {
+        id: "brethil",
+        name: "Forest of Brethil",
+        era: "first-age",
+        category: "forest",
+        coords: [530, 430],
+        description:
+            "A forest between the rivers Sirion and Teiglin, home to a remnant of the Haladin (the People of Haleth). Túrin Turambar lived here under the name Turambar and slew the dragon Glaurung at the nearby ravine of Cabed-en-Aras.",
+        depth: 2,
+        relatedCharacters: ["Túrin Turambar", "Glaurung"],
+    },
+    {
+        id: "pass-of-sirion",
+        name: "Pass of Sirion",
+        era: "first-age",
+        category: "mountain",
+        coords: [620, 480],
+        description:
+            "A narrow strategic pass where the River Sirion flowed between the Ered Wethrin and the highlands of Dorthonion. Controlled by the tower on Tol Sirion, it was a key entry point into Beleriand from the north.",
+        depth: 2,
+        relatedCharacters: ["Finrod Felagund", "Sauron"],
     },
 ];
 
@@ -120,6 +217,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [400, 850],
         description:
             "The White City, capital of Gondor, built on seven levels carved into Mount Mindolluin. Originally named Minas Anor (Tower of the Sun). The White Tree in the Court of the Fountain is a descendant of Telperion. Defended in the Battle of Pelennor Fields.",
+        depth: 1,
         relatedCharacters: [
             "Denethor",
             "Gandalf",
@@ -137,6 +235,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [400, 900],
         description:
             "Originally Minas Ithil (Tower of the Moon), twin city to Minas Anor. Captured by the Nazgul in TA 2002 and renamed Minas Morgul. The Witch-king made it his base. Frodo and Sam passed it on the way to Cirith Ungol.",
+        depth: 1,
         relatedCharacters: ["Witch-king", "Frodo", "Sam"],
     },
     {
@@ -147,6 +246,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [650, 600],
         description:
             "The Last Homely House East of the Sea, founded by Elrond in SA 1697 during the war against Sauron. The Council of Elrond met here to decide the fate of the One Ring. Elrond bore Vilya, the Ring of Air, mightiest of the Three Elven Rings.",
+        depth: 1,
         relatedCharacters: ["Elrond", "Arwen", "Aragorn", "Bilbo", "Frodo"],
         relatedEvents: ["Council of Elrond"],
     },
@@ -158,6 +258,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [380, 950],
         description:
             "The Dark Tower of Sauron in Mordor, built with the power of the One Ring during the Second Age. It took the Last Alliance seven years to besiege it. Rebuilt after Sauron's return. Collapsed when the One Ring was destroyed in Mount Doom.",
+        depth: 1,
         relatedCharacters: ["Sauron"],
         relatedEvents: ["War of the Last Alliance", "Destruction of the Ring"],
     },
@@ -169,6 +270,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [370, 930],
         description:
             "The volcanic mountain in Mordor where Sauron forged the One Ring. The only place where the Ring could be destroyed. Frodo carried the Ring here but was unable to willingly destroy it — Gollum bit off his finger and fell into the fire with the Ring.",
+        depth: 1,
         relatedCharacters: ["Sauron", "Frodo", "Sam", "Gollum"],
         relatedEvents: ["Forging of the One Ring", "Destruction of the Ring"],
     },
@@ -180,6 +282,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [500, 550],
         description:
             "Fortress at the southern end of the Misty Mountains containing the tower of Orthanc, an unbreakable tower built by Numenoreans. Saruman made it his base and bred the Uruk-hai here. Destroyed by the Ents led by Treebeard in the Battle of Isengard.",
+        depth: 1,
         relatedCharacters: ["Saruman", "Treebeard", "Merry", "Pippin"],
         relatedEvents: ["Battle of Isengard"],
     },
@@ -191,6 +294,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [550, 650],
         description:
             "Greatest mansion of the Dwarves, delved by Durin the Deathless beneath the Misty Mountains. The Dwarves mined too deep and awakened a Balrog (Durin's Bane) in TA 1980. Balin attempted to recolonize it but his colony was destroyed. The Fellowship passed through here; Gandalf fell fighting the Balrog.",
+        depth: 1,
         relatedCharacters: ["Durin", "Balin", "Gandalf", "Balrog"],
         relatedEvents: ["Battle of Azanulbizar", "Gandalf vs Balrog"],
     },
@@ -202,6 +306,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [700, 350],
         description:
             "Homeland of the Hobbits in Eriador, granted to them by King Argeleb II of Arnor in TA 1601. Four farthings: North, South, East, and West. Bag End in Hobbiton is the home of Bilbo and Frodo. Protected unknowingly by the Rangers of the North (Dunedain).",
+        depth: 1,
         relatedCharacters: ["Bilbo", "Frodo", "Sam", "Merry", "Pippin"],
     },
     {
@@ -212,6 +317,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [500, 700],
         description:
             "The Golden Wood, realm of Galadriel and Celeborn. The mallorn trees with golden leaves were unique to this forest (grown from seeds given by Gil-galad). Galadriel bore Nenya, the Ring of Water. The Fellowship rested here after Gandalf's fall in Moria.",
+        depth: 1,
         relatedCharacters: ["Galadriel", "Celeborn"],
     },
     {
@@ -222,6 +328,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [470, 520],
         description:
             "Fortress in the White Mountains of Rohan, named after Helm Hammerhand. The Hornburg fortress guarded the entrance. Site of one of the major battles of the War of the Ring where Rohan, aided by Gandalf and the Huorns, defeated Saruman's army of 10,000 Uruk-hai.",
+        depth: 1,
         relatedCharacters: [
             "Theoden",
             "Aragorn",
@@ -239,6 +346,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [460, 550],
         description:
             "Capital of Rohan, built on a hill at the feet of the White Mountains. Meduseld, the Golden Hall of the Kings of Rohan, sits at its summit. When Gandalf arrived to free Theoden from Saruman's influence, the city had fallen into despair under Grima Wormtongue's counsel.",
+        depth: 1,
         relatedCharacters: ["Theoden", "Eowyn", "Eomer", "Grima Wormtongue"],
     },
     {
@@ -249,6 +357,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [750, 900],
         description:
             "Dwarf kingdom founded by Thrain I after the Dwarves were driven from Moria. Smaug the dragon drove the Dwarves out in TA 2770. Reclaimed by Thorin Oakenshield's Company with Bilbo's help in TA 2941. The Arkenstone, a great white gem, was its most prized treasure.",
+        depth: 1,
         relatedCharacters: ["Thorin", "Bilbo", "Smaug", "Bard"],
         relatedEvents: ["Quest of Erebor", "Battle of Five Armies"],
     },
@@ -260,6 +369,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [530, 600],
         description:
             "One of the oldest forests in Middle-earth, home to the Ents led by Treebeard (Fangorn), the oldest living creature. Merry and Pippin fled here after escaping the Uruk-hai and convinced the Ents to march on Isengard. Gandalf the White was found here by Aragorn, Legolas, and Gimli.",
+        depth: 1,
         relatedCharacters: ["Treebeard", "Merry", "Pippin", "Gandalf"],
     },
     {
@@ -270,6 +380,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [395, 840],
         description:
             "The townlands before Minas Tirith, site of the greatest battle of the War of the Ring. The Witch-king was slain by Eowyn and Merry (fulfilling the prophecy: 'not by the hand of man'). Theoden King fell here. Aragorn arrived with the Army of the Dead on the Corsair ships.",
+        depth: 1,
         relatedCharacters: [
             "Theoden",
             "Eowyn",
@@ -287,6 +398,7 @@ export const thirdAgeLocations: MapLocation[] = [
         coords: [650, 200],
         description:
             "Elven port on the Gulf of Lhun, ruled by Cirdan the Shipwright (oldest Elf in Middle-earth). From here the Elves sailed West to Valinor. Gandalf, Frodo, Bilbo, Galadriel, and Elrond departed from here at the end of the Third Age. Cirdan gave Narya (Ring of Fire) to Gandalf upon his arrival.",
+        depth: 1,
         relatedCharacters: [
             "Cirdan",
             "Gandalf",
@@ -296,6 +408,137 @@ export const thirdAgeLocations: MapLocation[] = [
             "Elrond",
         ],
         relatedEvents: ["Departure to Valinor"],
+    },
+    {
+        id: "osgiliath",
+        name: "Osgiliath",
+        era: "third-age",
+        category: "ruins",
+        coords: [355, 870],
+        description:
+            "The ancient capital of Gondor, straddling the River Anduin between Minas Tirith and Minas Morgul. Once a magnificent city with the Dome of Stars housing a palantír, it was ruined in the Kin-strife and further destroyed in wars with Mordor.",
+        depth: 2,
+        relatedCharacters: ["Boromir", "Faramir"],
+    },
+    {
+        id: "dol-guldur",
+        name: "Dol Guldur",
+        era: "third-age",
+        category: "fortress",
+        coords: [530, 800],
+        description:
+            "The Hill of Sorcery in southern Mirkwood, where Sauron dwelt in secret as 'the Necromancer' for nearly two thousand years. The White Council drove him out in TA 2941, but he had already returned to Mordor.",
+        depth: 2,
+        relatedCharacters: ["Sauron", "Gandalf", "Galadriel"],
+    },
+    {
+        id: "dale",
+        name: "Dale",
+        era: "third-age",
+        category: "city",
+        coords: [740, 990],
+        description:
+            "A city of Men at the foot of the Lonely Mountain, destroyed by Smaug and rebuilt after his death. During the War of the Ring, King Brand was slain defending Dale alongside Dáin Ironfoot of Erebor.",
+        depth: 2,
+        relatedCharacters: ["Bard", "Brand", "Dáin Ironfoot"],
+    },
+    {
+        id: "lake-town",
+        name: "Lake-town (Esgaroth)",
+        era: "third-age",
+        category: "city",
+        coords: [720, 970],
+        description:
+            "A trading town built on stilts upon the Long Lake. It was destroyed by Smaug's attack but rebuilt with a share of the dragon's treasure. Bard the Bowman slew Smaug here with the Black Arrow.",
+        depth: 2,
+        relatedCharacters: ["Bard", "Smaug"],
+    },
+    {
+        id: "weathertop",
+        name: "Weathertop (Amon Sûl)",
+        era: "third-age",
+        category: "ruins",
+        coords: [640, 430],
+        description:
+            "A prominent hill in Eriador that once held a watchtower of Arnor and a palantír. Frodo was stabbed by the Witch-king with a Morgul-blade here, a wound that never fully healed.",
+        depth: 2,
+        relatedCharacters: ["Frodo", "Aragorn", "Witch-king"],
+    },
+    {
+        id: "bree",
+        name: "Bree",
+        era: "third-age",
+        category: "city",
+        coords: [630, 370],
+        description:
+            "A village at the crossroads of the Great East Road and the Greenway, unique for Men and Hobbits living together. The Prancing Pony inn is where Frodo first met Strider (Aragorn).",
+        depth: 2,
+        relatedCharacters: ["Aragorn", "Frodo", "Barliman Butterbur"],
+    },
+    {
+        id: "cirith-ungol",
+        name: "Cirith Ungol",
+        era: "third-age",
+        category: "fortress",
+        coords: [310, 950],
+        description:
+            "A pass into Mordor above Minas Morgul, guarded by a tower and by Shelob the Great Spider in her lair. Gollum led Frodo and Sam here, hoping Shelob would kill them so he could reclaim the Ring.",
+        depth: 2,
+        relatedCharacters: ["Frodo", "Sam", "Gollum", "Shelob"],
+    },
+    {
+        id: "dead-marshes",
+        name: "Dead Marshes",
+        era: "third-age",
+        category: "sacred",
+        coords: [400, 930],
+        description:
+            "Haunted marshlands east of the Emyn Muil, where pale lights flicker above the water and the faces of the dead can be seen beneath the surface — fallen warriors from the ancient Battle of Dagorlad.",
+        depth: 2,
+        relatedCharacters: ["Frodo", "Sam", "Gollum"],
+    },
+    {
+        id: "paths-of-dead",
+        name: "Paths of the Dead",
+        era: "third-age",
+        category: "mountain",
+        coords: [370, 680],
+        description:
+            "A haunted passage under the White Mountains from Dunharrow to the southern vales. The Dead Men of Dunharrow, cursed by Isildur for breaking their oath, dwelt here until Aragorn summoned them to fulfill their pledge.",
+        depth: 2,
+        relatedCharacters: ["Aragorn", "Legolas", "Gimli"],
+    },
+    {
+        id: "dunharrow",
+        name: "Dunharrow",
+        era: "third-age",
+        category: "fortress",
+        coords: [390, 660],
+        description:
+            "A fortified mountain refuge of the Rohirrim on a cliff above Harrowdale. The mustering-place of Rohan's armies before the ride to Minas Tirith. Ancient Púkel-men statues lined the switchback road.",
+        depth: 2,
+        relatedCharacters: ["Théoden", "Éowyn", "Aragorn"],
+    },
+    {
+        id: "henneth-annun",
+        name: "Henneth Annûn",
+        era: "third-age",
+        category: "fortress",
+        coords: [340, 890],
+        description:
+            "The Window of the Sunset, a hidden refuge behind a waterfall in Ithilien. Used by the Rangers of Gondor as a base for guerrilla operations against Mordor's forces. Faramir brought Frodo and Sam here.",
+        depth: 2,
+        relatedCharacters: ["Faramir", "Frodo", "Sam"],
+    },
+    {
+        id: "cair-andros",
+        name: "Cair Andros",
+        era: "third-age",
+        category: "fortress",
+        coords: [380, 880],
+        description:
+            "A fortified island in the River Anduin north of Osgiliath, shaped like a great ship. It guarded Gondor's northern flank against incursions from Mordor and the eastern lands.",
+        depth: 2,
     },
 ];
 

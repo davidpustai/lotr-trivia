@@ -18,6 +18,7 @@ export interface MapLocation {
     category: LocationCategory;
     coords: [number, number]; // [y, x] for CRS.Simple (latitude, longitude)
     description: string;
+    depth: number;
     relatedEvents?: string[];
     relatedCharacters?: string[];
 }
@@ -51,6 +52,11 @@ export const CATEGORY_LABELS: Record<LocationCategory, string> = {
     realm: "Realms",
     ruins: "Ruins",
     sacred: "Sacred Places",
+};
+
+export const DEPTH_LABELS: Record<number, string> = {
+    1: "Essential",
+    2: "Extended",
 };
 
 export const ERA_LABELS: Record<MapEra, string> = {

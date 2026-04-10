@@ -12,6 +12,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["first-age", "feanor", "silmarils"],
     },
     {
@@ -22,6 +23,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["silmarillion", "unfinished-tales"],
         quizPotential: true,
+        depth: 1,
         tags: ["gandalf", "maiar", "istari"],
     },
     {
@@ -32,6 +34,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["silmarillion", "unfinished-tales"],
         quizPotential: true,
+        depth: 1,
         tags: ["istari", "maiar", "valar"],
     },
     {
@@ -42,6 +45,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["balrog", "maiar", "morgoth"],
     },
     {
@@ -52,6 +56,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["sauron", "maiar", "aule"],
     },
     {
@@ -62,6 +67,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["tom-bombadil", "one-ring", "mystery"],
     },
     {
@@ -72,6 +78,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["silmarillion", "lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["eagles", "manwe", "valar"],
     },
     {
@@ -82,6 +89,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["lotr", "silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["shelob", "ungoliant", "cirith-ungol"],
     },
     {
@@ -92,6 +100,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["silmarillion"],
         quizPotential: false,
+        depth: 1,
         tags: ["morgoth", "arda", "first-age"],
     },
     {
@@ -102,6 +111,7 @@ export const allFacts: Fact[] = [
         category: "lore",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["aragorn", "dunedain", "numenor"],
     },
 
@@ -116,6 +126,7 @@ export const allFacts: Fact[] = [
         category: "language",
         sources: ["general"],
         quizPotential: true,
+        depth: 1,
         tags: ["quenya", "finnish", "elvish"],
     },
     {
@@ -126,6 +137,7 @@ export const allFacts: Fact[] = [
         category: "language",
         sources: ["general"],
         quizPotential: true,
+        depth: 1,
         tags: ["sindarin", "welsh", "elvish"],
     },
     {
@@ -136,6 +148,7 @@ export const allFacts: Fact[] = [
         category: "language",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["sindarin", "greeting", "elvish"],
     },
     {
@@ -146,6 +159,7 @@ export const allFacts: Fact[] = [
         category: "language",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["one-ring", "black-speech", "inscription"],
     },
     {
@@ -156,6 +170,7 @@ export const allFacts: Fact[] = [
         category: "language",
         sources: ["general"],
         quizPotential: true,
+        depth: 1,
         tags: ["tolkien", "oxford", "philology"],
     },
     {
@@ -166,6 +181,7 @@ export const allFacts: Fact[] = [
         category: "language",
         sources: ["silmarillion", "general"],
         quizPotential: false,
+        depth: 1,
         tags: ["quenya", "sindarin", "linguistics"],
     },
 
@@ -180,6 +196,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["narsil", "anduril", "aragorn", "sauron"],
     },
     {
@@ -190,6 +207,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["hobbit", "lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["glamdring", "orcrist", "gondolin", "swords"],
     },
     {
@@ -200,6 +218,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["lotr", "silmarillion", "unfinished-tales"],
         quizPotential: true,
+        depth: 1,
         tags: ["palantiri", "seeing-stones", "feanor"],
     },
     {
@@ -210,6 +229,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["lotr", "silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["phial", "galadriel", "earendil", "silmaril"],
     },
     {
@@ -220,6 +240,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["hobbit", "lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["mithril", "bilbo", "frodo", "khazad-dum"],
     },
     {
@@ -230,6 +251,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["hobbit", "lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["sting", "bilbo", "frodo", "gondolin"],
     },
     {
@@ -240,6 +262,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["lotr", "silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["rings-of-power", "one-ring", "three-rings"],
     },
     {
@@ -250,6 +273,7 @@ export const allFacts: Fact[] = [
         category: "artifacts",
         sources: ["silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["silmarils", "feanor", "first-age"],
     },
 
@@ -264,6 +288,7 @@ export const allFacts: Fact[] = [
         category: "creatures",
         sources: ["lotr", "silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["ents", "treebeard", "yavanna"],
     },
     {
@@ -274,6 +299,7 @@ export const allFacts: Fact[] = [
         category: "creatures",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["balrog", "moria", "gandalf", "durin"],
     },
     {
@@ -284,6 +310,7 @@ export const allFacts: Fact[] = [
         category: "creatures",
         sources: ["hobbit"],
         quizPotential: true,
+        depth: 1,
         tags: ["smaug", "erebor", "dragons", "bard"],
     },
     {
@@ -294,6 +321,7 @@ export const allFacts: Fact[] = [
         category: "creatures",
         sources: ["lotr", "hobbit", "pj-lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["wargs", "wolves", "orcs"],
     },
     {
@@ -304,6 +332,7 @@ export const allFacts: Fact[] = [
         category: "creatures",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["mumakil", "oliphaunts", "harad", "pelennor"],
     },
     {
@@ -314,6 +343,7 @@ export const allFacts: Fact[] = [
         category: "creatures",
         sources: ["lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["nazgul", "fell-beasts", "eowyn"],
     },
 
@@ -328,6 +358,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["peter-jackson", "new-zealand", "filming"],
     },
     {
@@ -338,6 +369,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["gollum", "andy-serkis", "motion-capture", "cgi"],
     },
     {
@@ -348,6 +380,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["viggo-mortensen", "aragorn", "injury"],
     },
     {
@@ -358,6 +391,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["sean-bean", "boromir", "new-zealand"],
     },
     {
@@ -368,6 +402,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["christopher-lee", "saruman", "tolkien"],
     },
     {
@@ -378,6 +413,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["peter-jackson", "new-line", "miramax"],
     },
     {
@@ -388,6 +424,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["oscars", "return-of-the-king", "awards"],
     },
     {
@@ -398,6 +435,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["helms-deep", "two-towers", "battle"],
     },
     {
@@ -408,6 +446,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["weta-workshop", "props", "armor"],
     },
     {
@@ -418,6 +457,7 @@ export const allFacts: Fact[] = [
         category: "film-production",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["hobbiton", "shire", "new-zealand", "set-design"],
     },
 
@@ -432,6 +472,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["sean-connery", "ian-mckellen", "gandalf", "casting"],
     },
     {
@@ -442,6 +483,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["stuart-townsend", "viggo-mortensen", "aragorn", "casting"],
     },
     {
@@ -452,6 +494,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["john-rhys-davies", "gimli", "scale"],
     },
     {
@@ -462,6 +505,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["orlando-bloom", "legolas", "injury"],
     },
     {
@@ -472,6 +516,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["hobbits", "tattoo", "fellowship", "tengwar"],
     },
     {
@@ -482,6 +527,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["cate-blanchett", "galadriel", "prosthetics"],
     },
     {
@@ -492,6 +538,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["elijah-wood", "frodo", "audition", "casting"],
     },
     {
@@ -502,6 +549,7 @@ export const allFacts: Fact[] = [
         category: "cast-trivia",
         sources: ["pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["viggo-mortensen", "aragorn", "horses"],
     },
 
@@ -516,6 +564,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["tom-bombadil", "omission", "old-forest"],
     },
     {
@@ -526,6 +575,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["glorfindel", "arwen", "bruinen"],
     },
     {
@@ -536,6 +586,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["scouring", "shire", "saruman"],
     },
     {
@@ -546,6 +597,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["saruman", "grima", "isengard", "shire"],
     },
     {
@@ -556,6 +608,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["faramir", "one-ring", "temptation"],
     },
     {
@@ -566,6 +619,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["aragorn", "kingship", "characterization"],
     },
     {
@@ -576,6 +630,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["arwen", "liv-tyler", "expanded-role"],
     },
     {
@@ -586,6 +641,7 @@ export const allFacts: Fact[] = [
         category: "adaptation-differences",
         sources: ["lotr", "pj-lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["denethor", "gondor", "characterization"],
     },
 
@@ -600,6 +656,7 @@ export const allFacts: Fact[] = [
         category: "geography",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["mordor", "maps", "scale"],
     },
     {
@@ -610,6 +667,7 @@ export const allFacts: Fact[] = [
         category: "geography",
         sources: ["lotr", "general"],
         quizPotential: true,
+        depth: 1,
         tags: ["shire", "england", "tolkien"],
     },
     {
@@ -620,6 +678,7 @@ export const allFacts: Fact[] = [
         category: "geography",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["minas-tirith", "gondor", "architecture"],
     },
     {
@@ -630,6 +689,7 @@ export const allFacts: Fact[] = [
         category: "geography",
         sources: ["hobbit", "lotr"],
         quizPotential: false,
+        depth: 1,
         tags: ["erebor", "dwarves", "smaug"],
     },
     {
@@ -640,6 +700,7 @@ export const allFacts: Fact[] = [
         category: "geography",
         sources: ["lotr", "silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["rivendell", "imladris", "elrond"],
     },
 
@@ -654,6 +715,7 @@ export const allFacts: Fact[] = [
         category: "culture",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["hobbits", "food", "meals"],
     },
     {
@@ -664,6 +726,7 @@ export const allFacts: Fact[] = [
         category: "culture",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["elves", "sleep", "immortality"],
     },
     {
@@ -674,6 +737,7 @@ export const allFacts: Fact[] = [
         category: "culture",
         sources: ["silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["dwarves", "aule", "creation"],
     },
     {
@@ -684,6 +748,7 @@ export const allFacts: Fact[] = [
         category: "culture",
         sources: ["lotr", "silmarillion"],
         quizPotential: true,
+        depth: 1,
         tags: ["numenor", "dunedain", "lifespan"],
     },
     {
@@ -694,6 +759,508 @@ export const allFacts: Fact[] = [
         category: "culture",
         sources: ["lotr"],
         quizPotential: true,
+        depth: 1,
         tags: ["ents", "entish", "language", "treebeard"],
+    },
+
+    // ─────────────────────────────────────────────
+    // DEPTH 2: LANGUAGE (~6 facts)
+    // ─────────────────────────────────────────────
+    {
+        id: "fact-tengwar-script",
+        title: "Tengwar Is Tolkien's Most Detailed Writing System",
+        content:
+            "The Tengwar script, invented by Feanor within the legendarium, is a fully functional writing system with systematic rules for consonants (tengwar) and vowels (tehtar, written as diacritical marks). Tolkien designed it with remarkable linguistic rigor, basing the letter shapes on the phonetic features of the sounds they represent. It can be adapted to write many languages, including English, and is the script used on the One Ring's inscription.",
+        category: "language",
+        sources: ["lotr", "silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["tengwar", "feanor", "writing-system"],
+    },
+    {
+        id: "fact-khuzdul-secret",
+        title: "Khuzdul Is the Secret Language of the Dwarves",
+        content:
+            "Khuzdul, the language of the Dwarves, is one of Tolkien's most secretive invented tongues. The Dwarves guard their language jealously and never teach it to outsiders. They use it only among themselves and in their private names — the names by which Dwarves are known to the outside world (like Gimli or Thorin) are actually taken from the language of Men, not Khuzdul. Even their battle-cry 'Baruk Khazad! Khazad ai-menu!' is one of the few Khuzdul phrases ever heard by non-Dwarves.",
+        category: "language",
+        sources: ["lotr", "silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["khuzdul", "dwarves", "secret-language"],
+    },
+    {
+        id: "fact-black-speech-sauron",
+        title: "Sauron Devised the Black Speech for His Servants",
+        content:
+            "The Black Speech was a language invented by Sauron in the Second Age to serve as the common tongue of all his servants in Mordor. However, it never fully supplanted the various Orkish dialects. After Sauron's first defeat, the language fell out of general use, though the Nazgul preserved it. In its pure form, the Black Speech survives in the inscription on the One Ring. Tolkien based its harsh, guttural sound on Hurrian, an ancient Near Eastern language.",
+        category: "language",
+        sources: ["lotr", "silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["black-speech", "sauron", "mordor"],
+    },
+    {
+        id: "fact-entish-slowness",
+        title: "Entish Is the Longest Language to Speak in Middle-earth",
+        content:
+            "The Entish language is unlike any other in Middle-earth because it is tonal, long-winded, and agglutinative to an extreme degree. A single Entish noun can take minutes to pronounce because it incorporates the entire history and nature of the thing being named. Treebeard explains that his full name would take an impossibly long time to say because he is very old and his name keeps growing. Even simple greetings between Ents can last hours.",
+        category: "language",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["entish", "ents", "treebeard"],
+    },
+    {
+        id: "fact-quenya-sindarin-differences",
+        title: "Quenya and Sindarin Diverged Like Latin and French",
+        content:
+            "Quenya and Sindarin both descend from Common Eldarin but diverged dramatically. Quenya, preserved in Valinor, retained an archaic, formal quality, while Sindarin evolved in Middle-earth under starlight with extensive consonant mutations similar to Welsh. By the Third Age, Quenya functioned as a ceremonial language of lore and song among the Noldor, while Sindarin was the everyday spoken Elvish tongue. Aragorn and Arwen spoke to each other in Sindarin.",
+        category: "language",
+        sources: ["silmarillion", "lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["quenya", "sindarin", "elvish", "linguistics"],
+    },
+    {
+        id: "fact-adunaic-numenor",
+        title: "Adunaic Was the Native Tongue of the Numenoreans",
+        content:
+            "Adunaic was the Mannish language spoken by the Numenoreans, derived from the languages of the Edain of the First Age. Although the Faithful Numenoreans used Elvish languages out of reverence, the King's Men increasingly promoted Adunaic and eventually banned Elvish tongues. After the Downfall of Numenor, Adunaic evolved into Westron (the Common Speech), which became the lingua franca of Middle-earth and is what Tolkien 'translates' as English in his works.",
+        category: "language",
+        sources: ["silmarillion", "unfinished-tales"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["adunaic", "numenor", "westron", "common-speech"],
+    },
+
+    // ─────────────────────────────────────────────
+    // DEPTH 2: CREATURES (~7 facts)
+    // ─────────────────────────────────────────────
+    {
+        id: "fact-shelob-lineage",
+        title: "Shelob Predates Sauron's Occupation of Mordor",
+        content:
+            "Shelob had already taken up residence in the pass of Cirith Ungol before Sauron established Mordor as his domain. She is the last surviving offspring of Ungoliant, the primordial spider-spirit who helped Morgoth destroy the Two Trees of Valinor. Sauron regarded Shelob as a useful guardian of the pass and occasionally fed her prisoners. She was beholden to no one and desired only to consume all living things — Sauron was her neighbor, not her master.",
+        category: "creatures",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["shelob", "ungoliant", "cirith-ungol", "mordor"],
+    },
+    {
+        id: "fact-watcher-in-water",
+        title: "The Watcher in the Water Guards the West-gate of Moria",
+        content:
+            "The tentacled creature lurking in the dark pool outside the Doors of Durin is known as the Watcher in the Water. Tolkien never specified its exact nature — it may be a creature from the ancient deeps of the world, disturbed by the Dwarves' mining, or something sent by Sauron. It seized Frodo specifically, suggesting it may have been drawn to the Ring. After the Fellowship entered Moria, the Watcher tore down the holly trees and sealed the doors behind them.",
+        category: "creatures",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["watcher", "moria", "mystery", "frodo"],
+    },
+    {
+        id: "fact-eagles-not-taxi",
+        title: "The Eagles Are Not a Convenient Transportation Service",
+        content:
+            "A common question about The Lord of the Rings is why the Eagles did not simply fly the Ring to Mordor. Within the story, the Eagles are proud, independent beings who serve Manwe, not the free peoples. They intervene only at moments of divine providence. Furthermore, flying openly into Mordor would have drawn the attention of the Nazgul on their fell beasts and Sauron's Eye. The quest depended on secrecy, which giant Eagles would have utterly compromised.",
+        category: "creatures",
+        sources: ["lotr", "silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["eagles", "manwe", "mordor", "one-ring"],
+    },
+    {
+        id: "fact-wargs-vs-wolves",
+        title: "Wargs Possess a Dark Intelligence Beyond Ordinary Wolves",
+        content:
+            "While ordinary wolves exist in Middle-earth, Wargs are a distinct breed of evil wolf-spirits that can communicate with Orcs and form strategic alliances. During the War of the Ring, Warg-riders served as scouts and cavalry for Saruman's forces. In the Elder Days, the greatest wolf of all was Carcharoth, bred by Morgoth and fed on living flesh, who bit off Beren's hand along with the Silmaril. Huan the hound was fated to die only by the greatest wolf, which proved to be Carcharoth.",
+        category: "creatures",
+        sources: ["lotr", "silmarillion"],
+        quizPotential: false,
+        depth: 2,
+        tags: ["wargs", "wolves", "carcharoth", "orcs"],
+    },
+    {
+        id: "fact-barrow-wights-origin",
+        title: "Barrow-wights Were Sent by the Witch-king to the Barrow-downs",
+        content:
+            "The Barrow-wights are evil spirits that inhabit the burial mounds of the Barrow-downs near the Shire. They were sent there by the Witch-king of Angmar to prevent any resettlement of the fallen kingdom of Cardolan. The wights do not originate from the Men buried in the barrows; they are dark spirits from Angmar that possessed the ancient tombs. It was in the barrows that the hobbits found their Westernesse blades, swords forged specifically to fight the Witch-king's forces.",
+        category: "creatures",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["barrow-wights", "witch-king", "cardolan", "barrow-downs"],
+    },
+    {
+        id: "fact-mumakil-war-towers",
+        title: "Mumakil Carried War-towers with Dozens of Haradrim Archers",
+        content:
+            "The Mumakil, or Oliphaunts, were immense beasts of burden and war used by the Haradrim from the far south of Middle-earth. Each Mumakil bore a war-tower (howdah) on its back crewed by archers, and their sheer size could trample cavalry lines and shatter infantry formations. At the Battle of the Pelennor Fields, the Rohirrim were initially unable to halt their charge. Sam Gamgee had dreamed of seeing an Oliphaunt, and his wonder upon seeing one in Ithilien is one of the story's lighter moments.",
+        category: "creatures",
+        sources: ["lotr"],
+        quizPotential: false,
+        depth: 2,
+        tags: ["mumakil", "haradrim", "pelennor", "war"],
+    },
+    {
+        id: "fact-fell-beasts-not-nazgul",
+        title: "Fell Beasts Are Mounts, Not the Nazgul Themselves",
+        content:
+            "A common misconception is to refer to the Nazgul's flying mounts as 'Nazgul.' The Nazgul are the nine Ringwraiths, former kings of Men enslaved by their Rings of Power. Their winged steeds, described by Tolkien as 'fell beasts,' are a separate creature entirely — ancient, foul, featherless flying reptiles bred in Mordor. The Witch-king's fell beast was slain by Eowyn before she killed the Witch-king himself at the Battle of Pelennor Fields.",
+        category: "creatures",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["fell-beasts", "nazgul", "eowyn", "ringwraiths"],
+    },
+
+    // ─────────────────────────────────────────────
+    // DEPTH 2: ARTIFACTS (~8 facts)
+    // ─────────────────────────────────────────────
+    {
+        id: "fact-palantiri-details",
+        title: "The Seven Palantiri Had Different Sizes and Powers",
+        content:
+            "The seven Palantiri brought to Middle-earth by the Faithful Numenoreans were not all identical. The Orthanc-stone, Ithil-stone, and Anor-stone were smaller and used for regional communication. The chief stone, the Master-stone of Osgiliath, was large enough for several people to look into at once, but it was lost in the river during the Kin-strife civil war. The stones could show visions of distant places and communicate with each other, but required great strength of will to direct.",
+        category: "artifacts",
+        sources: ["lotr", "unfinished-tales"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["palantiri", "seeing-stones", "numenor"],
+    },
+    {
+        id: "fact-phial-galadriel-light-chain",
+        title: "The Phial of Galadriel Carries Light Across Three Ages",
+        content:
+            "The light in the Phial of Galadriel represents a chain of preserved illumination spanning the ages of Arda. The Two Trees of Valinor produced the original light, which was captured in the Silmarils by Feanor. One Silmaril was bound to Earendil, who sails the sky as a star. Galadriel captured that starlight in water and placed it in the crystal phial she gave Frodo. Thus the light Frodo used against Shelob descended directly from the Trees that Shelob's ancestor Ungoliant devoured.",
+        category: "artifacts",
+        sources: ["lotr", "silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["phial", "galadriel", "earendil", "two-trees"],
+    },
+    {
+        id: "fact-sting-origin-gondolin",
+        title: "Sting Was Forged in Gondolin Thousands of Years Before Bilbo Found It",
+        content:
+            "Sting was forged in the hidden Elven city of Gondolin during the First Age, making it over 6,000 years old by the time Bilbo discovered it in a troll hoard. It was originally a long knife or short sword by Elvish standards, but served as a full-sized sword for a hobbit. Its ability to glow blue in the presence of Orcs was a feature of many Gondolin-forged blades. Bilbo named it Sting after using it to fight the spiders of Mirkwood.",
+        category: "artifacts",
+        sources: ["hobbit", "lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["sting", "gondolin", "bilbo", "first-age"],
+    },
+    {
+        id: "fact-narsil-anduril-reforging",
+        title: "The Reforging of Narsil Was a Pivotal Symbolic Act",
+        content:
+            "Narsil, the sword of Elendil, was broken beneath him when he fell fighting Sauron at the end of the Second Age. Its shards were kept at Rivendell for nearly three thousand years as a symbol of the hope that the line of kings would be restored. The Elves of Rivendell reforged the blade into Anduril, the Flame of the West, for Aragorn. In the books, Aragorn carries Anduril from the start of the quest, while in the films the reforging occurs later for dramatic effect.",
+        category: "artifacts",
+        sources: ["lotr", "pj-lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["narsil", "anduril", "aragorn", "reforging"],
+    },
+    {
+        id: "fact-evenstar-pendant-film",
+        title: "The Evenstar Pendant Is a Film Invention",
+        content:
+            "The Evenstar pendant worn by Arwen in Peter Jackson's films, which she gives to Aragorn as a token of her love and choice of mortality, is not described in Tolkien's books. It was created for the films as a visual symbol of Arwen's sacrifice and her fading life force. The name 'Evenstar' (Undomiel in Quenya) is Arwen's actual epithet in the books, but the jeweled pendant itself is an invention of the filmmakers to give physical form to the romance subplot.",
+        category: "artifacts",
+        sources: ["pj-lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["evenstar", "arwen", "aragorn", "film-invention"],
+    },
+    {
+        id: "fact-mithril-coat-value",
+        title: "Frodo's Mithril Coat Was a Kingly Gift Beyond Price",
+        content:
+            "The mithril coat given by Thorin to Bilbo, and later passed to Frodo, was made of mithril rings as supple as linen and hard as dragon-scales. Gandalf estimated its value as greater than the entire Shire. Mithril was the rarest and most precious metal in Middle-earth, found only in the mines of Khazad-dum. The coat saved Frodo's life in Moria when a cave-troll speared him, and later in Shelob's lair. It was taken by the Orcs of Cirith Ungol and displayed by the Mouth of Sauron as false proof of Frodo's capture.",
+        category: "artifacts",
+        sources: ["lotr", "hobbit"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["mithril", "frodo", "bilbo", "khazad-dum"],
+    },
+    {
+        id: "fact-horn-gondor",
+        title: "The Horn of Gondor Was Cloven in Two When Boromir Fell",
+        content:
+            "The great Horn of Gondor, borne by the eldest son of the Steward, was an heirloom of the house of the Stewards for generations. When blown, it could be heard throughout Gondor. Boromir sounded the Horn at Amon Hen while defending Merry and Pippin from the Uruk-hai, and it was cloven in two during his last stand. The broken halves were later found washed down the Anduin by Faramir, who recognized them and understood his brother had fallen.",
+        category: "artifacts",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["horn-of-gondor", "boromir", "faramir"],
+    },
+    {
+        id: "fact-mirror-galadriel",
+        title: "The Mirror of Galadriel Shows Things That Were, Are, and May Be",
+        content:
+            "The Mirror of Galadriel is a silver basin filled with water from a stream in Lothlorien, into which Galadriel can breathe to activate visions. It shows things that were, things that are, and things that yet may be, but interpreting them correctly is perilous. Frodo saw the Eye of Sauron searching for him, and Sam saw the Shire being industrialized. Galadriel warned that the Mirror is dangerous as a guide of deeds, for it shows many things and not all have yet come to pass.",
+        category: "artifacts",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["mirror", "galadriel", "lothlorien", "visions"],
+    },
+
+    // ─────────────────────────────────────────────
+    // DEPTH 2: CULTURE (~7 facts)
+    // ─────────────────────────────────────────────
+    {
+        id: "fact-shire-calendar",
+        title: "The Shire Has Its Own Calendar System",
+        content:
+            "The Shire Reckoning is a unique calendar used by hobbits, with twelve months of thirty days each plus two extra days (one at midsummer, one at midwinter) that belong to no month. The year begins on the Shire equivalent of December 22. Hobbit months have distinctive names like Afteryule, Solmath, Rethe, and Astron. Tolkien provided detailed appendices explaining how the Shire Reckoning relates to our own Gregorian calendar, reflecting his philological love of systematic detail.",
+        category: "culture",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["shire", "calendar", "hobbits"],
+    },
+    {
+        id: "fact-entmoot-decisions",
+        title: "Entmoots Can Take Days Because Ents Decide Nothing in Haste",
+        content:
+            "An Entmoot is a gathering of Ents to discuss matters of importance, and they are notoriously slow. The Entmoot that decided whether to march on Isengard took three full days, which Treebeard considered remarkably hasty by Entish standards. Ents believe that anything worth saying is worth taking a very long time to say, and any decision worth making requires thorough deliberation. The fact that they decided to go to war in just three days showed how deeply Saruman's destruction of the trees had angered them.",
+        category: "culture",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["ents", "entmoot", "treebeard", "isengard"],
+    },
+    {
+        id: "fact-dwarf-outer-names",
+        title: "Dwarves Use Secret Inner Names and Public Outer Names",
+        content:
+            "Dwarves have a tradition of keeping their true Khuzdul names completely secret from outsiders. The names by which Dwarves are known to Elves, Men, and hobbits — names like Gimli, Thorin, Balin, and Durin — are actually from the language of the Northmen, not Khuzdul. Even Dwarvish tombstones do not record their true names. Similarly, the Dwarves never reveal Khuzdul to outsiders, making it one of the most closely guarded secrets in Middle-earth.",
+        category: "culture",
+        sources: ["lotr", "silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["dwarves", "khuzdul", "names", "secrecy"],
+    },
+    {
+        id: "fact-hobbit-coming-of-age",
+        title: "Hobbits Come of Age at Thirty-Three",
+        content:
+            "In Hobbit society, the age of majority is thirty-three, not eighteen or twenty-one as in human cultures. A hobbit is considered an 'irresponsible' youth until that birthday. This is why Bilbo's choice to leave the Shire on his one hundred and eleventh birthday, giving Bag End to Frodo on Frodo's thirty-third birthday, was doubly significant — Bilbo was reaching a remarkable age while Frodo was just coming into adulthood. Hobbits commonly live to around 100, with the Old Took reaching 130.",
+        category: "culture",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["hobbits", "coming-of-age", "bilbo", "frodo"],
+    },
+    {
+        id: "fact-elven-immortality-fading",
+        title: "Elves Are Immortal but Can Fade from the World",
+        content:
+            "Elves are bound to Arda for as long as it endures — they do not age or die of disease. However, they can be killed by violence or overwhelmed by grief. Over the long ages, the weight of the world slowly diminishes them in a process called 'fading,' where their spirits consume their bodies until they become invisible wraith-like beings. This fading is one reason the Elves eventually leave Middle-earth for Valinor, where their spirits can remain embodied and vital.",
+        category: "culture",
+        sources: ["silmarillion", "lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["elves", "immortality", "fading", "valinor"],
+    },
+    {
+        id: "fact-gift-of-men",
+        title: "Death Is Called the Gift of Iluvatar to Men",
+        content:
+            "In Tolkien's cosmology, the mortality of Men is not a punishment but the Gift of Iluvatar — the ability to leave the circles of the world entirely and go to a fate unknown even to the Valar. Elves are bound to Arda forever, but Men are free to depart it. Morgoth twisted this gift into a source of fear, making Men dread death rather than embrace it. The Numenoreans' desire to escape death led directly to their downfall, while Aragorn's willing acceptance of death at the end of his life showed the Gift properly received.",
+        category: "culture",
+        sources: ["silmarillion", "lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["men", "death", "iluvatar", "numenor"],
+    },
+    {
+        id: "fact-pipeweed-smoking",
+        title: "Pipe-weed Smoking Was Invented by Hobbits",
+        content:
+            "The hobbits of the Shire claim to have invented the art of smoking pipe-weed, a variety of the plant Nicotiana. Tobold Hornblower of Longbottom is credited as the first to grow it in the Shire around TA 2670. The practice spread to Dwarves, Rangers, and even Wizards — Gandalf and Aragorn are both noted pipe-smokers. Saruman secretly indulged in pipe-weed while publicly disparaging the habit, and barrels of Longbottom Leaf were found in the ruins of Isengard.",
+        category: "culture",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["pipe-weed", "hobbits", "shire", "saruman"],
+    },
+
+    // ─────────────────────────────────────────────
+    // DEPTH 2: ADAPTATION DIFFERENCES (~6 facts)
+    // ─────────────────────────────────────────────
+    {
+        id: "fact-glorfindel-replaced-detail",
+        title: "Glorfindel's Replacement by Arwen Changed the Tone of the Ford Scene",
+        content:
+            "In the books, Glorfindel — a reborn Elf-lord who once slew a Balrog in the Fall of Gondolin — finds Frodo and places him on his horse Asfaloth to ride ahead to Rivendell. The flood at the Ford of Bruinen is commanded by Elrond with Gandalf's assistance. In the films, Arwen replaces Glorfindel entirely, rides with Frodo, and speaks the incantation that raises the flood. This change established Arwen as an active heroine early in the trilogy rather than a distant figure seen only in flashbacks.",
+        category: "adaptation-differences",
+        sources: ["lotr", "pj-lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["glorfindel", "arwen", "bruinen", "ford"],
+    },
+    {
+        id: "fact-scouring-omitted-detail",
+        title: "The Scouring of the Shire Was Tolkien's Favorite Chapter",
+        content:
+            "Tolkien considered 'The Scouring of the Shire' essential to his themes — it showed that the hobbits had grown into leaders capable of saving their own homeland without the help of wizards or kings. Peter Jackson omitted it partly for pacing and partly because the films already had multiple endings. A brief vision of the Scouring appears in Galadriel's Mirror in the film. Many Tolkien scholars argue the omission removes a key thematic point about the real-world costs of war reaching even the most sheltered places.",
+        category: "adaptation-differences",
+        sources: ["lotr", "pj-lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["scouring", "shire", "omission", "themes"],
+    },
+    {
+        id: "fact-bombadil-omitted-detail",
+        title: "Tom Bombadil's Omission Removed the Source of the Hobbits' Weapons",
+        content:
+            "Tom Bombadil's omission from the films created a plot gap regarding the hobbits' Westernesse blades. In the books, the hobbits receive ancient Dunedain swords from the Barrow-downs, rescued by Bombadil from the Barrow-wights. Merry's blade was specifically enchanted to harm the Witch-king. In the films, Aragorn simply hands the hobbits swords at Weathertop, and Merry's blade is a generic Rohan sword that happens to break the Witch-king's spell of invulnerability.",
+        category: "adaptation-differences",
+        sources: ["lotr", "pj-lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["tom-bombadil", "barrow-wights", "swords", "witch-king"],
+    },
+    {
+        id: "fact-faramir-character-change",
+        title: "Faramir's Character Was Significantly Altered in the Films",
+        content:
+            "In the books, Faramir is presented as a noble contrast to Boromir, immediately recognizing the Ring's danger and refusing it without hesitation. Peter Jackson altered this so that Faramir initially succumbs to temptation and attempts to bring the Ring to Gondor, only releasing Frodo after witnessing the Ring's power at Osgiliath. Jackson argued that no human character should easily resist the Ring, as it would undermine the threat established throughout the trilogy. This change remains one of the most debated among fans.",
+        category: "adaptation-differences",
+        sources: ["lotr", "pj-lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["faramir", "one-ring", "characterization", "osgiliath"],
+    },
+    {
+        id: "fact-denethor-portrayal",
+        title: "The Films Reduced Denethor to a More Villainous Figure",
+        content:
+            "Tolkien's Denethor is a proud, intelligent ruler who has been using the Anor-stone (palantir) to contest Sauron's will, wearing himself down in the process. His madness comes from genuine despair after seeing the fleets of Umbar. The films portray him more simply as a bitter, gluttonous man who sends Faramir on a suicide mission and tries to burn himself and Faramir alive. The book version is more sympathetic — a great man broken by an impossible burden, similar to how the Ring breaks its bearers.",
+        category: "adaptation-differences",
+        sources: ["lotr", "pj-lotr"],
+        quizPotential: false,
+        depth: 2,
+        tags: ["denethor", "palantir", "gondor", "characterization"],
+    },
+    {
+        id: "fact-army-dead-differences",
+        title: "The Army of the Dead Had a Much Smaller Role in the Books",
+        content:
+            "In the films, the Army of the Dead sweeps across the Pelennor Fields in a green wave, decisively winning the battle. In the books, the Dead Men of Dunharrow only help Aragorn capture the Corsair ships at Pelargir — they never reach the Pelennor Fields. Aragorn releases them from their oath at Pelargir and sails the captured ships to Minas Tirith with reinforcements from southern Gondor. Jackson expanded their role for cinematic spectacle, though some fans felt it diminished the valor of the living warriors.",
+        category: "adaptation-differences",
+        sources: ["lotr", "pj-lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["army-of-dead", "pelennor", "aragorn", "pelargir"],
+    },
+
+    // ─────────────────────────────────────────────
+    // DEPTH 2: GEOGRAPHY (~4 facts)
+    // ─────────────────────────────────────────────
+    {
+        id: "fact-paths-of-dead",
+        title: "The Paths of the Dead Run Beneath the White Mountains",
+        content:
+            "The Paths of the Dead are a haunted passage running beneath the Dwimorberg mountain in the White Mountains of Gondor. The Men of the Mountains swore allegiance to Isildur but refused to fight Sauron, and Isildur cursed them to rest never until they fulfilled their oath. For three thousand years, the Dead haunted the passage, and no living person dared enter. Aragorn, as Isildur's heir, had the authority to summon them and hold them to their oath, which he did to turn the tide of the war.",
+        category: "geography",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["paths-of-dead", "dunharrow", "white-mountains", "aragorn"],
+    },
+    {
+        id: "fact-argonath-statues",
+        title: "The Argonath Are Colossal Statues of Isildur and Anarion",
+        content:
+            "The Argonath, or Pillars of the Kings, are two enormous stone statues carved into the cliffs on either side of the River Anduin at the northern entrance to the old realm of Gondor. They depict Isildur and Anarion, the founders of Gondor, with their left hands raised in warning to enemies. The statues were carved in the reign of Romendacil II around TA 1340. The Fellowship passed between them on their way south, and even Aragorn was moved by the sight of his ancestors.",
+        category: "geography",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["argonath", "isildur", "anarion", "anduin", "gondor"],
+    },
+    {
+        id: "fact-ithilien-garden",
+        title: "Ithilien Was Once the Fairest Garden of Gondor",
+        content:
+            "Ithilien, the land between the Anduin and the Mountains of Shadow, was once the most beautiful province of Gondor, filled with fragrant herbs and flowering trees. Even in its decline during the War of the Ring, Sam and Frodo found it still lovely as they passed through with Gollum. Faramir and his Rangers used the hidden refuge of Henneth Annun as their base for guerilla raids against Sauron's forces passing through Ithilien toward the Crossroads.",
+        category: "geography",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["ithilien", "faramir", "gondor", "henneth-annun"],
+    },
+    {
+        id: "fact-dead-marshes",
+        title: "The Dead Marshes Preserve the Faces of Ancient Warriors",
+        content:
+            "The Dead Marshes lie north of the Morannon and east of the Emyn Muil. They expanded over the millennia to engulf part of the ancient battlefield of Dagorlad, where the Last Alliance fought Sauron. Ghostly lights flicker over the stagnant pools, and beneath the water lie the preserved faces of Elves, Men, and Orcs who fell in the battle thousands of years ago. Gollum led Frodo and Sam through the Dead Marshes, warning them not to follow the lights or touch the water.",
+        category: "geography",
+        sources: ["lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["dead-marshes", "dagorlad", "gollum", "frodo"],
+    },
+
+    // ─────────────────────────────────────────────
+    // DEPTH 2: DEEP LORE (~5 facts)
+    // ─────────────────────────────────────────────
+    {
+        id: "fact-earendil-star",
+        title: "Earendil Sails the Sky as the Brightest Star",
+        content:
+            "Earendil the Mariner, bearing a Silmaril upon his brow, sails the sky in his ship Vingilot as the Morning and Evening Star (the planet Venus in our world). He was placed in the heavens by the Valar after he sailed to Valinor to beg their intervention against Morgoth. The Star of Earendil is a symbol of hope throughout all the ages of Middle-earth. It is Earendil's light that Galadriel captured in the Phial she gave to Frodo, and Sam invoked Earendil's name in Shelob's lair.",
+        category: "lore",
+        sources: ["silmarillion", "lotr"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["earendil", "silmaril", "star", "hope"],
+    },
+    {
+        id: "fact-music-ainur-fate",
+        title: "The Music of the Ainur Predestined the Shape of the World",
+        content:
+            "The Ainulindale, the Great Music sung by the Ainur before the creation of Arda, contains within it the entire history and fate of the world. Everything that happens in Middle-earth was in some sense 'sung' into existence before time began. Even Melkor's discord was woven into the greater harmony by Iluvatar's three themes. This concept of a divinely composed fate underpins Tolkien's frequent references to 'chance' and 'design' — Bilbo was meant to find the Ring, as Gandalf tells Frodo.",
+        category: "lore",
+        sources: ["silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["ainulindale", "music", "creation", "fate"],
+    },
+    {
+        id: "fact-gift-iluvatar",
+        title: "Iluvatar Alone Grants the Secret Fire of True Life",
+        content:
+            "The Imperishable Flame, or Secret Fire, is the power of Iluvatar alone to grant true independent life and free will to created beings. Melkor searched for it in the Void but could never find it, for it dwells with Iluvatar. This is why Morgoth and Sauron could corrupt and twist existing life but never truly create new life of their own. Orcs were corrupted Elves or Men, trolls were mockeries of Ents, and dragons were bred from existing creatures. Only Iluvatar's flame creates souls.",
+        category: "lore",
+        sources: ["silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["iluvatar", "secret-fire", "creation", "morgoth"],
+    },
+    {
+        id: "fact-feanor-oath-consequences",
+        title: "The Oath of Feanor Caused Three Kinslayings and the Ruin of the Noldor",
+        content:
+            "Feanor and his seven sons swore an unbreakable oath by Iluvatar and the Everlasting Darkness to recover the Silmarils from anyone who withheld them. This oath drove them to commit three Kinslayings — at Alqualonde, at Doriath, and at the Havens of Sirion — in which Elves slew Elves. It poisoned alliances against Morgoth and led to the destruction of every Noldorin kingdom in Beleriand. In the end, when Maedhros and Maglor finally held the Silmarils, the jewels burned their hands, rejecting them for their crimes.",
+        category: "lore",
+        sources: ["silmarillion"],
+        quizPotential: true,
+        depth: 2,
+        tags: ["feanor", "oath", "kinslaying", "silmarils"],
+    },
+    {
+        id: "fact-morgoth-ring-concept",
+        title: "Morgoth's Ring Explains Why Evil Persists After Morgoth's Defeat",
+        content:
+            "Tolkien developed the concept of 'Morgoth's Ring' to explain how Morgoth's influence endures even after he was cast into the Void. Just as Sauron invested his power into the One Ring, Morgoth poured his essence into the entire physical substance of Arda — the very matter of the world became his 'ring.' This is why corruption, decay, and evil persist in Middle-earth even after Morgoth's defeat: the world itself is marred. Only a complete remaking of Arda could undo this taint, and Tolkien hinted at such a restoration in his eschatology.",
+        category: "lore",
+        sources: ["silmarillion"],
+        quizPotential: false,
+        depth: 2,
+        tags: ["morgoth", "arda", "corruption", "metaphysics"],
     },
 ];
