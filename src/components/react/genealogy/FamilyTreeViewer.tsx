@@ -72,7 +72,7 @@ export function FamilyTreeViewer({ trees }: Props) {
                     <button
                         key={t.id}
                         onClick={() => setSelectedTree(i)}
-                        className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+                        className={`rounded-md px-4 py-2 text-base font-medium transition-colors ${
                             selectedTree === i
                                 ? "bg-[var(--color-gold)] text-[var(--color-bg-primary)]"
                                 : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:border-[var(--color-gold-dim)]"
@@ -83,7 +83,7 @@ export function FamilyTreeViewer({ trees }: Props) {
                 ))}
             </div>
 
-            <p className="mb-4 text-sm text-[var(--color-text-muted)]">
+            <p className="mb-4 text-base text-[var(--color-text-muted)]">
                 {tree.description}
             </p>
 
@@ -141,7 +141,7 @@ export function FamilyTreeViewer({ trees }: Props) {
                 </svg>
             </div>
 
-            <p className="mt-2 text-center text-xs text-[var(--color-text-muted)]">
+            <p className="mt-2 text-center text-sm text-[var(--color-text-muted)]">
                 Scroll to zoom, drag to pan. Click a character for details.
             </p>
 

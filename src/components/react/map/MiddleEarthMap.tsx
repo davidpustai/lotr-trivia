@@ -108,7 +108,7 @@ export function MiddleEarthMap({ layers, locations }: Props) {
                                 setActiveEra(layer.id);
                                 setFlyTarget(null);
                             }}
-                            className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+                            className={`rounded-md px-4 py-2 text-base font-medium transition-colors ${
                                 activeEra === layer.id
                                     ? "bg-[var(--color-mithril)] text-[var(--color-bg-primary)]"
                                     : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:border-[var(--color-mithril)]"
@@ -127,7 +127,7 @@ export function MiddleEarthMap({ layers, locations }: Props) {
                         placeholder="Search locations..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-primary)] py-2 pr-4 pl-10 text-sm text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] outline-none focus:border-[var(--color-mithril)]"
+                        className="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-primary)] py-2 pr-4 pl-10 text-base text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] outline-none focus:border-[var(--color-mithril)]"
                     />
                     {searchResults.length > 0 && (
                         <div className="absolute top-full right-0 left-0 z-50 mt-1 max-h-48 overflow-y-auto rounded-md border border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
@@ -138,7 +138,7 @@ export function MiddleEarthMap({ layers, locations }: Props) {
                                         setFlyTarget(loc.coords);
                                         setSearchQuery("");
                                     }}
-                                    className="block w-full px-3 py-2 text-left text-sm text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-card)] hover:text-[var(--color-text-primary)]"
+                                    className="block w-full px-3 py-2 text-left text-base text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-card)] hover:text-[var(--color-text-primary)]"
                                 >
                                     {loc.name}
                                 </button>
@@ -155,7 +155,7 @@ export function MiddleEarthMap({ layers, locations }: Props) {
                         <button
                             key={cat}
                             onClick={() => toggleCategory(cat)}
-                            className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                            className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium transition-colors ${
                                 activeCategories.size === 0 ||
                                 activeCategories.has(cat)
                                     ? "text-[var(--color-text-primary)]"
@@ -216,7 +216,7 @@ export function MiddleEarthMap({ layers, locations }: Props) {
                 </MapContainer>
             </div>
 
-            <p className="text-center text-xs text-[var(--color-text-muted)]">
+            <p className="text-center text-sm text-[var(--color-text-muted)]">
                 {filteredLocations.length} location
                 {filteredLocations.length !== 1 ? "s" : ""} shown. Add map
                 images to <code>/public/maps/</code> for the overlay to display.

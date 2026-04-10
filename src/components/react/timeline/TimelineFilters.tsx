@@ -45,13 +45,13 @@ export function TimelineFilters({
                     placeholder="Search events..."
                     value={searchQuery}
                     onChange={(e) => onSearchChange(e.target.value)}
-                    className="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-primary)] py-2 pr-4 pl-10 text-sm text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] outline-none focus:border-[var(--color-gold-dim)]"
+                    className="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-primary)] py-2 pr-4 pl-10 text-base text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] outline-none focus:border-[var(--color-gold-dim)]"
                 />
             </div>
 
             {/* Ages */}
             <div>
-                <span className="mb-2 block text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                <span className="mb-2 block text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                     Ages
                 </span>
                 <div className="flex flex-wrap gap-2">
@@ -59,9 +59,9 @@ export function TimelineFilters({
                         <button
                             key={age}
                             onClick={() => onToggleAge(age)}
-                            className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                            className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
                                 activeAges.size === 0 || activeAges.has(age)
-                                    ? "bg-[var(--color-gold-dim)] text-[var(--color-text-primary)]"
+                                    ? "bg-[var(--color-gold)] text-[var(--color-bg-primary)]"
                                     : "bg-[var(--color-bg-card)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)]"
                             }`}
                         >
@@ -73,7 +73,7 @@ export function TimelineFilters({
 
             {/* Tags */}
             <div>
-                <span className="mb-2 block text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                <span className="mb-2 block text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                     Tags
                 </span>
                 <div className="flex flex-wrap gap-2">
@@ -81,9 +81,9 @@ export function TimelineFilters({
                         <button
                             key={tag}
                             onClick={() => onToggleTag(tag)}
-                            className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                            className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
                                 activeTags.size === 0 || activeTags.has(tag)
-                                    ? "bg-[var(--color-gold-dim)] text-[var(--color-text-primary)]"
+                                    ? "bg-[var(--color-gold)] text-[var(--color-bg-primary)]"
                                     : "bg-[var(--color-bg-card)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)]"
                             }`}
                         >
@@ -96,7 +96,7 @@ export function TimelineFilters({
             {/* Significance + Clear */}
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <span className="text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                    <span className="text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                         Min. Significance
                     </span>
                     <div className="flex gap-1">
@@ -104,7 +104,7 @@ export function TimelineFilters({
                             <button
                                 key={s}
                                 onClick={() => onSignificanceChange(s)}
-                                className={`flex h-7 w-7 items-center justify-center rounded text-xs font-bold transition-colors ${
+                                className={`flex h-7 w-7 items-center justify-center rounded text-sm font-bold transition-colors ${
                                     minSignificance === s
                                         ? "bg-[var(--color-gold)] text-[var(--color-bg-primary)]"
                                         : "bg-[var(--color-bg-card)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)]"
@@ -118,7 +118,7 @@ export function TimelineFilters({
                 {hasFilters && (
                     <button
                         onClick={onClearAll}
-                        className="flex items-center gap-1 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
+                        className="flex items-center gap-1 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
                     >
                         <X className="h-3 w-3" /> Clear filters
                     </button>

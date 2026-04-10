@@ -84,12 +84,12 @@ export function FactsBrowser({ facts }: Props) {
                         placeholder="Search facts..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-primary)] py-2 pr-4 pl-10 text-sm text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] outline-none focus:border-[var(--color-gold-dim)]"
+                        className="w-full rounded-md border border-[var(--color-border)] bg-[var(--color-bg-primary)] py-2 pr-4 pl-10 text-base text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] outline-none focus:border-[var(--color-gold-dim)]"
                     />
                 </div>
 
                 <div>
-                    <span className="mb-2 block text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                    <span className="mb-2 block text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                         Category
                     </span>
                     <div className="flex flex-wrap gap-2">
@@ -98,7 +98,7 @@ export function FactsBrowser({ facts }: Props) {
                                 <button
                                     key={cat}
                                     onClick={() => toggleCategory(cat)}
-                                    className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                                    className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
                                         activeCategories.size === 0 ||
                                         activeCategories.has(cat)
                                             ? "bg-[var(--color-shire-green)]/30 text-[var(--color-shire-green-light)]"
@@ -113,7 +113,7 @@ export function FactsBrowser({ facts }: Props) {
                 </div>
 
                 <div>
-                    <span className="mb-2 block text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                    <span className="mb-2 block text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                         Source
                     </span>
                     <div className="flex flex-wrap gap-2">
@@ -122,7 +122,7 @@ export function FactsBrowser({ facts }: Props) {
                                 <button
                                     key={src}
                                     onClick={() => toggleSource(src)}
-                                    className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                                    className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
                                         activeSources.size === 0 ||
                                         activeSources.has(src)
                                             ? "bg-[var(--color-shire-green)]/30 text-[var(--color-shire-green-light)]"
@@ -139,7 +139,7 @@ export function FactsBrowser({ facts }: Props) {
                 <div className="flex items-center justify-between">
                     <button
                         onClick={() => setQuizOnly(!quizOnly)}
-                        className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                        className={`flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium transition-colors ${
                             quizOnly
                                 ? "bg-[var(--color-gold)] text-[var(--color-bg-primary)]"
                                 : "bg-[var(--color-bg-card)] text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
@@ -150,7 +150,7 @@ export function FactsBrowser({ facts }: Props) {
                     {hasFilters && (
                         <button
                             onClick={clearAll}
-                            className="flex items-center gap-1 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
+                            className="flex items-center gap-1 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-gold)]"
                         >
                             <X className="h-3 w-3" /> Clear filters
                         </button>
@@ -159,7 +159,7 @@ export function FactsBrowser({ facts }: Props) {
             </div>
 
             {/* Results count */}
-            <p className="mb-4 text-sm text-[var(--color-text-muted)]">
+            <p className="mb-4 text-base text-[var(--color-text-muted)]">
                 {filtered.length} fact{filtered.length !== 1 ? "s" : ""}
             </p>
 

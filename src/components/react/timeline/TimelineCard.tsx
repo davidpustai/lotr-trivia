@@ -54,18 +54,18 @@ export function TimelineCard({ event, side }: Props) {
                 >
                     <div className="mb-1 flex items-start justify-between gap-2">
                         {event.year && (
-                            <span className="shrink-0 text-xs font-semibold text-[var(--color-gold)]">
+                            <span className="shrink-0 text-sm font-semibold text-[var(--color-gold)]">
                                 {event.year}
                             </span>
                         )}
-                        <span className="text-xs text-[var(--color-gold-dim)]">
+                        <span className="text-sm text-[var(--color-gold-dim)]">
                             {significanceStars}
                         </span>
                     </div>
                     <h3 className="mb-1 text-base font-bold text-[var(--color-text-primary)]">
                         {event.title}
                     </h3>
-                    <p className="text-sm text-[var(--color-text-secondary)]">
+                    <p className="text-base text-[var(--color-text-secondary)]">
                         {event.summary}
                     </p>
 
@@ -74,7 +74,7 @@ export function TimelineCard({ event, side }: Props) {
                         {event.tags.map((tag) => (
                             <span
                                 key={tag}
-                                className="rounded bg-[var(--color-bg-secondary)] px-2 py-0.5 text-[10px] text-[var(--color-text-muted)]"
+                                className="rounded bg-[var(--color-bg-secondary)] px-2 py-0.5 text-xs text-[var(--color-text-muted)]"
                             >
                                 {TAG_LABELS[tag]}
                             </span>
@@ -90,7 +90,7 @@ export function TimelineCard({ event, side }: Props) {
 
                     {/* Details */}
                     {expanded && event.details && (
-                        <div className="mt-3 border-t border-[var(--color-border)] pt-3 text-sm text-[var(--color-text-secondary)]">
+                        <div className="mt-3 border-t border-[var(--color-border)] pt-3 text-base text-[var(--color-text-secondary)]">
                             {event.details}
                         </div>
                     )}

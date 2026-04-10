@@ -22,7 +22,7 @@ export function AgeSelector({ currentAge, onSelectAge }: Props) {
                                     block: "start",
                                 });
                         }}
-                        className={`rounded-md px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-colors ${
+                        className={`rounded-md px-3 py-1.5 text-sm font-medium whitespace-nowrap transition-colors ${
                             currentAge === age
                                 ? "bg-[var(--color-gold)] text-[var(--color-bg-primary)]"
                                 : "text-[var(--color-text-muted)] hover:bg-[var(--color-bg-card)] hover:text-[var(--color-text-secondary)]"

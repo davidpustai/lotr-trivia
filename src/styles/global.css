@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
 @theme {
     --color-bg-primary: #1a1209;
@@ -8,7 +7,7 @@
     --color-bg-card-hover: #3d2e1a99;
     --color-gold: #c9a84c;
     --color-gold-light: #e4c76b;
-    --color-gold-dim: #8a6d2b;
+    --color-gold-dim: #a68532;
     --color-mithril: #c0c8d4;
     --color-mithril-light: #dce3eb;
     --color-shire-green: #5a8a4a;
@@ -21,10 +20,10 @@
     --color-race-maiar: #c9a0dc;
     --color-text-primary: #e8dcc8;
     --color-text-secondary: #b8a88a;
-    --color-text-muted: #8a7a60;
+    --color-text-muted: #a89880;
     --color-border: #4a3a20;
     --color-border-light: #5a4a30;
-    --font-serif: "Crimson Text", Georgia, serif;
+    --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -39,7 +38,7 @@ body {
     background-color: var(--color-bg-primary);
     min-height: 100vh;
     color: var(--color-text-primary);
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
 }
 
 h1,

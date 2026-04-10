@@ -28,16 +28,16 @@ export function CharacterModal({ character, onClose }: Props) {
                 <h2 className="mb-1 text-2xl font-bold text-[var(--color-gold)]">
                     {character.name}
                 </h2>
-                <p className="mb-3 text-sm text-[var(--color-text-muted)]">
+                <p className="mb-3 text-base text-[var(--color-text-muted)]">
                     {RACE_LABELS[character.race]}
                 </p>
 
                 {character.otherNames && character.otherNames.length > 0 && (
                     <div className="mb-3">
-                        <span className="text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                        <span className="text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                             Also known as
                         </span>
-                        <p className="text-sm text-[var(--color-text-secondary)]">
+                        <p className="text-base text-[var(--color-text-secondary)]">
                             {character.otherNames.join(", ")}
                         </p>
                     </div>
@@ -45,16 +45,16 @@ export function CharacterModal({ character, onClose }: Props) {
 
                 {character.titles && character.titles.length > 0 && (
                     <div className="mb-3">
-                        <span className="text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                        <span className="text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                             Titles
                         </span>
-                        <p className="text-sm text-[var(--color-text-secondary)]">
+                        <p className="text-base text-[var(--color-text-secondary)]">
                             {character.titles.join(", ")}
                         </p>
                     </div>
                 )}
 
-                <div className="mb-3 flex gap-4 text-sm text-[var(--color-text-secondary)]">
+                <div className="mb-3 flex gap-4 text-base text-[var(--color-text-secondary)]">
                     {character.birth && (
                         <span>
                             <span className="text-[var(--color-text-muted)]">
@@ -73,16 +73,16 @@ export function CharacterModal({ character, onClose }: Props) {
                     )}
                 </div>
 
-                <p className="mb-4 text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                <p className="mb-4 text-base leading-relaxed text-[var(--color-text-secondary)]">
                     {character.bio}
                 </p>
 
                 {character.feats && character.feats.length > 0 && (
                     <div className="mb-4">
-                        <span className="mb-1 block text-xs font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
+                        <span className="mb-1 block text-sm font-semibold tracking-wider text-[var(--color-text-muted)] uppercase">
                             Notable Feats
                         </span>
-                        <ul className="list-inside list-disc space-y-1 text-sm text-[var(--color-text-secondary)]">
+                        <ul className="list-inside list-disc space-y-1 text-base text-[var(--color-text-secondary)]">
                             {character.feats.map((feat, i) => (
                                 <li key={i}>{feat}</li>
                             ))}
@@ -92,14 +92,14 @@ export function CharacterModal({ character, onClose }: Props) {
 
                 {character.quizFacts && character.quizFacts.length > 0 && (
                     <div>
-                        <span className="mb-1 block text-xs font-semibold tracking-wider text-[var(--color-gold-dim)] uppercase">
+                        <span className="mb-1 block text-sm font-semibold tracking-wider text-[var(--color-gold-dim)] uppercase">
                             Quiz Facts
                         </span>
                         <ul className="space-y-1">
                             {character.quizFacts.map((fact, i) => (
                                 <li
                                     key={i}
-                                    className="flex items-start gap-2 text-sm text-[var(--color-text-primary)]"
+                                    className="flex items-start gap-2 text-base text-[var(--color-text-primary)]"
                                 >
                                     <span className="mt-0.5 text-[var(--color-gold)]">
                                         ★

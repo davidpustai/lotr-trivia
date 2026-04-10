@@ -36,7 +36,7 @@ export function TreeNode({ character, x, y, onClick }: Props) {
                 fill="var(--color-text-primary)"
                 fontSize={12}
                 fontWeight={700}
-                fontFamily="var(--font-serif)"
+                fontFamily="var(--font-sans)"
             >
                 {character.name}
             </text>
@@ -46,7 +46,7 @@ export function TreeNode({ character, x, y, onClick }: Props) {
                 textAnchor="middle"
                 fill={raceColor}
                 fontSize={10}
-                fontFamily="var(--font-serif)"
+                fontFamily="var(--font-sans)"
             >
                 {character.titles?.[0] ?? ""}
             </text>
