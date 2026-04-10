@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Home">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+        <div class="text-center">
+            <h1 class="mb-4 text-5xl font-bold md:text-7xl">
+                Middle-earth Trivia
+            </h1>
+            <p
+                class="mx-auto mb-12 max-w-2xl text-xl text-[var(--color-text-secondary)]"
+            >
+                Your study companion for Lord of the Rings trivia. Deep lore
+                from the Silmarillion, The Hobbit, and The Lord of the Rings.
+            </p>
+        </div>
+
+        <div class="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
+            <a
+                href="/timeline"
+                class="group block rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-all hover:border-[var(--color-gold-dim)] hover:bg-[var(--color-bg-card-hover)]"
+            >
+                <h2
+                    class="mb-2 text-2xl font-bold group-hover:text-[var(--color-gold-light)]"
+                >
+                    Timeline
+                </h2>
+                <p class="text-[var(--color-text-secondary)]">
+                    From the creation of Ea to the Fourth Age. Every major event
+                    across all ages of Middle-earth.
+                </p>
+            </a>
+
+            <a
+                href="/genealogy"
+                class="group block rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-all hover:border-[var(--color-gold-dim)] hover:bg-[var(--color-bg-card-hover)]"
+            >
+                <h2
+                    class="mb-2 text-2xl font-bold group-hover:text-[var(--color-gold-light)]"
+                >
+                    Genealogy
+                </h2>
+                <p class="text-[var(--color-text-secondary)]">
+                    Family trees of the great houses. Elves, Dwarves, Hobbits,
+                    and the line of kings.
+                </p>
+            </a>
+
+            <a
+                href="/map"
+                class="group block rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-all hover:border-[var(--color-gold-dim)] hover:bg-[var(--color-bg-card-hover)]"
+            >
+                <h2
+                    class="mb-2 text-2xl font-bold group-hover:text-[var(--color-gold-light)]"
+                >
+                    Interactive Map
+                </h2>
+                <p class="text-[var(--color-text-secondary)]">
+                    Explore Middle-earth and Beleriand. Battles, fortresses,
+                    forests, and key locations.
+                </p>
+            </a>
+
+            <a
+                href="/facts"
+                class="group block rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-all hover:border-[var(--color-gold-dim)] hover:bg-[var(--color-bg-card-hover)]"
+            >
+                <h2
+                    class="mb-2 text-2xl font-bold group-hover:text-[var(--color-gold-light)]"
+                >
+                    Facts &amp; Trivia
+                </h2>
+                <p class="text-[var(--color-text-secondary)]">
+                    Quiz-ready facts about lore, languages, artifacts, film
+                    production, and more.
+                </p>
+            </a>
+        </div>
+    </div>
+</BaseLayout>

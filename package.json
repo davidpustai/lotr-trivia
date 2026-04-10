@@ -1,0 +1,54 @@
+{
+    "name": "lotr-trivia",
+    "type": "module",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "lint": "eslint .",
+        "format:check": "prettier . --check --cache",
+        "format:fix": "prettier . --write --cache"
+    },
+    "browserslist": [
+        "> 0.5% in CZ",
+        "last 2 versions",
+        "Firefox ESR",
+        "not dead"
+    ],
+    "dependencies": {
+        "@astrojs/check": "^0.9.8",
+        "@astrojs/react": "^4.4.2",
+        "@tailwindcss/vite": "^4.2.2",
+        "@types/d3-hierarchy": "^3.1.7",
+        "@types/d3-selection": "^3.0.11",
+        "@types/d3-zoom": "^3.0.8",
+        "@types/leaflet": "^1.9.21",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "astro": "^5.18.1",
+        "d3-hierarchy": "^3.1.2",
+        "d3-zoom": "^3.0.0",
+        "leaflet": "^1.9.4",
+        "lucide-react": "^0.468.0",
+        "react": "^19.2.5",
+        "react-dom": "^19.2.5",
+        "react-leaflet": "^5.0.0",
+        "tailwindcss": "^4.2.2",
+        "typescript": "^5.9.3"
+    },
+    "devDependencies": {
+        "@astrojs/ts-plugin": "^1.10.7",
+        "autoprefixer": "^10.4.27",
+        "eslint": "^9.39.4",
+        "eslint-plugin-astro": "^1.7.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-jsx-a11y": "^6.10.2",
+        "prettier": "3.8.2",
+        "prettier-plugin-astro": "0.14.1",
+        "prettier-plugin-css-order": "^2.2.0",
+        "prettier-plugin-organize-imports": "^4.3.0",
+        "prettier-plugin-tailwindcss": "^0.7.2",
+        "typescript-eslint": "^8.58.1"
+    }
+}
